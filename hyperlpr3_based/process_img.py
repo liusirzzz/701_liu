@@ -28,7 +28,7 @@ def drawRectBox(image, rect, addText, fontC, conf):
 
 # 读取选择的图片
 input_folder = 'input_img'
-output_folder = 'output_img'
+output_folder = 'hyperlpr3_based\output_img_lpr3'
 catcher = lpr3.LicensePlateCatcher()
 for file in os.listdir(input_folder):
     img_path = os.path.join(input_folder, file)
@@ -44,6 +44,7 @@ for file in os.listdir(input_folder):
     image = drawRectBox(img, boxes, lisence, fontC, conf)
     cv2.imwrite(ouput_path, image)
 
+print("Done!")
     # cv2.imshow('RecognitionResult', image)
     # cv2.waitKey(0)
     # cv2.destroyAllWindows()
