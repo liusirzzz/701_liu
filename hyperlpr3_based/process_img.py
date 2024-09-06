@@ -27,7 +27,7 @@ def drawRectBox(image, rect, addText, fontC, conf):
     return imagex
 
 # 读取选择的图片
-input_folder = 'input_img'
+input_folder = 'hyperlpr3_based\input_img'
 output_folder = 'hyperlpr3_based\output_img_lpr3'
 catcher = lpr3.LicensePlateCatcher()
 for file in os.listdir(input_folder):

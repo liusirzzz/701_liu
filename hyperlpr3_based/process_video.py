@@ -27,7 +27,7 @@ def drawRectBox(image, rect, addText, fontC, conf):
     return imagex
 
 # 读取选择的图片
-cap = cv2.VideoCapture('video1.mp4')
+cap = cv2.VideoCapture('hyperlpr3_based/video1.mp4')
 if not cap.isOpened():
     print("Error opening video stream or file")
 
