@@ -15,7 +15,7 @@ def drawRectBox(image, rect, addText, fontC, conf):
     """
     # 绘制车牌位置方框
     cv2.rectangle(image, (int(round(rect[0])), int(round(rect[1]))),
-                 (int(round(rect[2]) + 15), int(round(rect[3]) + 15)),
+                 (int(round(rect[2])), int(round(rect[3]))),
                  (0, 0, 255), 2)
     # 绘制字体背景框
     cv2.rectangle(image, (int(rect[0] - 1), int(rect[1]) - 10), (int(rect[0] + 80), int(rect[1])), (0, 0, 255), -1, cv2.LINE_AA)
