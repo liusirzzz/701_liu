@@ -47,6 +47,9 @@ while True:
     
     all_res = catcher(frame)
     if all_res:
+        for res in all_res:
+            print(res[0])
+    if all_res:
         # 车牌标注的字体
         for res in all_res:
 

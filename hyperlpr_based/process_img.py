@@ -37,6 +37,7 @@ for file in os.listdir(input_folder):
     ouput_path = os.path.join(output_folder, file)
 
     all_res = catcher(img)
+    print(file, all_res[0][0])
     # 车牌标注的字体
     fontC = ImageFont.truetype("C:\Windows\Fonts\方正粗黑宋简体.ttf", 10, 0)
     # all_res为多个车牌信息的列表，取第一个车牌信息

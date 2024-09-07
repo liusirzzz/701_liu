@@ -99,7 +99,8 @@ def dr_plate(im0, coord, plat_num):
     for i in range(0, plate.shape[1]):
         b = CHARS[plate[0][i]]
         a += b  # 将字符连接成字符串
-
+    
+    print("车牌号为：", a)
     # 画框
     cv2.rectangle(im0, (int(coord[0]), int(coord[1])), (int(coord[2]), int(coord[3])), (0, 0, 255), 2, cv2.LINE_AA)
     # 绘制文本，支持中文
