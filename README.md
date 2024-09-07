@@ -15,13 +15,31 @@
 - 更改YOLOv5文件读取及模型权重载入的路径
 
 ### 运行方法
-hyperlpr_based
+**环境要求**
+- python3.6+
+- opencv-python
+- hyperlpr
+- pytorch
+- torchvision
+- Pillow
+- yolov5
+
+
+**安装方法**
+```bash
+pip install opencv-python
+pip install hyperlpr
+pip install torch torchvision
+pip install Pillow
+```
+
+**运行hyperlpr_based模型**
 ```bash
 cd hyperlpr_based
 python process_img.py
 python process_video.py
 ```
-YOLO_lpr_based
+**运行YOLO_lpr_based模型**
 ```bash
 cd yolo_lprnet\master_liu
 python detect.py
