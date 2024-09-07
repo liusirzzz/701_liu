@@ -69,7 +69,7 @@ class LPRNet(nn.Module):
         for i, layer in enumerate(self.backbone.children()):
             x = layer(x)
             if i in [2, 6, 13, 22]: # [2, 4, 8, 11, 22]
-                keep_features.append(x)
+                keep_features.append(x) # 后面做res plus
 
         global_context = list()
         for i, f in enumerate(keep_features):
