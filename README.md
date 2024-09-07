@@ -22,7 +22,7 @@
 - pytorch
 - torchvision
 - Pillow
-- yolov5
+- ultralytics
 
 
 **安装方法**
@@ -31,6 +31,7 @@ pip install opencv-python
 pip install hyperlpr
 pip install torch torchvision
 pip install Pillow
+pip install ultralytics
 ```
 
 **运行hyperlpr_based模型**
